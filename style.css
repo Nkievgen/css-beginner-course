@@ -1,0 +1,98 @@
+:root {
+    --theme1-color1: #042940;
+    --theme1-color2: #005C53;
+    --theme1-color3: #9FC131;
+    --theme1-color4: #DBF227;
+    --theme1-color5: #D6D58E;
+    --theme2-color1: #004358;
+    --theme2-color2: #1F8A70;
+    --theme2-color3: #BEDB39;
+    --theme2-color4: #FFE11A;
+    --theme2-color5: #FD7400;
+    --font-size: 1.3rem;
+    --plex-sans: 'IBM Plex Sans', sans-serif;
+    --plex-sans-condensed: 'IBM Plex Sans Condensed', sans-serif;
+    --mono: "Oxygen mono", monospace;
+    --sans: Oxygen, sans-serif;
+}
+/* border box model: https://css-tricks.com/box-sizing/ */
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--theme1-color1);
+  color: var(--theme1-color5);
+  font-family: var(--plex-sans);
+  font-size: var(--font-size);
+}
+
+h1, h2, h3 {
+  margin: 0
+}
+
+a {
+    color: var(--theme1-color3);
+    text-decoration: underline;
+  }
+  
+  a:hover {
+    color: var(--theme1-color4);
+    text-decoration: none
+  }
+
+/* intro styles */
+
+#intro {
+  padding-bottom: 10em;
+}
+#intro p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+#intro .name {
+  font-family: var(--plex-sans-condensed);
+}
+.name span {
+  font-family: var(--plex-sans);
+  font-size: 4rem;
+  color: var(--theme1-color4);
+  display: block;
+}
+#intro h2 {
+  font-size: 4rem;
+  font-weight: normal;
+}
+
+#contact {
+  background-color: var(--theme2-color1);
+  color: var(--theme2-color3);
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+#contact h2 {
+  color: var(--theme2-color3);
+  font-family: var(--plex-sans-condensed);
+}
+
+#contact a {
+  color: var(--theme2-color4);
+}
+
+#contact a:hover {
+  color: var(--theme2-color5);
+}
+
+#contact p:last-child {
+  margin-top: 3rem;
+}
